@@ -1,0 +1,103 @@
+.home {
+  background: #282846;
+  .header {
+    background-color: black;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      align-items: center;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+  .loading {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    position: absolute;
+    z-index: 1;
+    color: red;
+  }
+}
+
+.left {
+  height: 86vh;
+  .uploadVideo {
+    padding: 1rem;
+    text-align: center;
+    background-color: #1e1e3f8e;
+    color: white;
+    box-sizing: border-box;
+    box-shadow: 5px 5px solid white;
+    border-radius: 20px;
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.5rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .playedVideo {
+    max-height: 400px;
+  }
+}
+
+.videos-container {
+  margin-top: 2rem;
+  .top {
+    background-color: black;
+    h1 {
+      font-size: 1.5rem;
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+    }
+    border-bottom: 2px solid gray;
+  }
+
+  .videos {
+    height: 72vh;
+    overflow-y: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 1rem;
+    .video {
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      margin: 5px;
+      background-color: rgba(0, 0, 0, 0.205);
+      color: white;
+      padding: 0.5rem 1rem;
+      box-sizing: border-box;
+      border-radius: 0.5rem;
+      transition: all 0.4s ease-in-out;
+      h1 {
+        font-size: 1rem;
+        font-weight: lighter;
+        margin: 0;
+      }
+    }
+    .video:hover {
+      background-color: rgba(177, 10, 155, 0.411);
+
+      transform: scaleY(1.2);
+    }
+
+    .playing {
+      background-color: rgba(0, 128, 0, 0.411);
+      transform: scaleY(1.2);
+    }
+  }
+}

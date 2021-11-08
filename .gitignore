@@ -1,0 +1,17 @@
+
+# for smart contract
+/node_modules
+/build
+.secret
+
+# for frontend
+/frontend/build
+/frontend/node_modules
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# vercel
+/frontend/.vercel
+/frontend/.next
